@@ -1,18 +1,41 @@
 <?php 
 $str = "On n’est pas le meilleur quand on le croit mais quand on le sait";
+$str = mb_strtolower($str);
 
 $voyelles = ["a", "i", "e", "u", "o", "y"];
 $consonnes = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"];
 $vCounter = 0;
 $cCounter = 0;
 
+/*
 for ($i = 0; $i < strlen($str); $i++) {
     if (in_array($str[$i], $voyelles)) {
         $vCounter++;
     } elseif (in_array($str[$i], $consonnes)) {
         $cCounter++;
     }
-} ?>
+} 
+*/
+
+for ($i = 0; isset($str[$i]); $i++) {
+    foreach ($voyelles as $val) {
+        if ($val == $str[$i]) {
+            $vCounter++;
+            break;
+        } 
+    }
+}
+
+for ($i = 0; isset($str[$i]); $i++) {
+    foreach ($consonnes as $val) {
+        if ($val == $str[$i]) {
+            $cCounter++;
+            break;
+        }  
+    }    
+}
+
+?>
 
 
 <!DOCTYPE html>

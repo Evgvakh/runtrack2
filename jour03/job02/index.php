@@ -5,7 +5,7 @@ $newStr = explode(" ", $str);
 
 foreach ($newStr as $val):
     $toPrint = '';
-    for ($i = 0; $i < strlen($val); $i = $i + 2) {
+    for ($i = 0; isset($val[$i]); $i = $i + 2) {
        $toPrint .= $val[$i];        
     } ?>
     <?=$toPrint?>
