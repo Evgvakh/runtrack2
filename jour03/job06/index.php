@@ -11,19 +11,22 @@
     
     $str = "Les choses que l'on possède finissent par nous posséder";
     
-    /*
+    /* 1
     for ($i = 1000000000000; $i >= 0; $i--) {
         if(isset($str[$i])) {
             echo $str[$i];
         }
     }
     */
-
-    for ($i = -1; isset($str[$i]); $i--) { echo $str[$i]; };
-   
     
+    for ($i = 0; isset($str[$i]); $i++);
+    for ($i; $i > 0; $i--) { echo $str[$i-1]; }    
 
-    /*
+    /* 3
+    for ($i = -1; isset($str[$i]); $i--) { echo $str[$i]; };
+    */
+
+    /* 4
     $newStr = explode(" ", $str);
     
     foreach ($newStr as $key => $val) {
