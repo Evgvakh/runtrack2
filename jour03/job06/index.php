@@ -8,10 +8,24 @@
 </head>
 <body>
     <?php 
-
+    
     $str = "Les choses que l'on possède finissent par nous posséder";
-    $newStr = explode(" ", $str);
+    
+    /*
+    for ($i = 1000000000000; $i >= 0; $i--) {
+        if(isset($str[$i])) {
+            echo $str[$i];
+        }
+    }
+    */
 
+    for ($i = -1; isset($str[$i]); $i--) { echo $str[$i]; };
+   
+    
+
+    /*
+    $newStr = explode(" ", $str);
+    
     foreach ($newStr as $key => $val) {
         $newStr[$key] = strrev($val);    
     }
@@ -22,6 +36,9 @@
         
         <?= $val ?>
         <?php endforeach;
+    */
+    
+
     ?>
 </body>
 </html>
