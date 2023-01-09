@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+div {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 2em;
+    background-color: rgb(55, 107, 202);
+    text-align: center;
+    border: 2px solid rgb(29, 28, 28);
+}
+
+select {
+    background-color:rgba(55, 106, 202, 0.574);
+    padding: 0.7em;
+    border-radius: 10px;
+    border: 1px solid rgb(29, 28, 28);
+}
+
+input {
+    padding: 0.7em;
+    border-radius: 10px;
+    border: 1px solid rgb(29, 28, 28);
+    background-color:rgba(55, 106, 202, 0.574);
+}
