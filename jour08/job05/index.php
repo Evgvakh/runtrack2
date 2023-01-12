@@ -105,7 +105,7 @@
         }
 
         body {
-            background-color: rgba(190, 235, 252, 0.6);
+            background-color: rgba(190, 235, 252, 0.1);
         }
 
         div {
@@ -123,7 +123,7 @@
 
         table {
             width: 100%;
-            border-spacing: 0.3em;
+            border-spacing: 0.5em;
         }
 
         tr {
@@ -134,7 +134,7 @@
         td {
             border: 2px solid orange;
             text-align: center;
-            width: 130px;
+            width: 100px;
             height: 130px;            
         }
 
