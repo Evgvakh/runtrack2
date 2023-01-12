@@ -1,0 +1,1 @@
+SELECT prenom, nom, naissance FROM etudiants WHERE (naissance > 19980101) AND (naissance < 20180101);
